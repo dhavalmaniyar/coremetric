@@ -5,16 +5,18 @@
     .content {
         position: absolute;
         left: 6%;
-        background-color: rgba(25, 25, 112, 0.3);
         border-radius: 20px;
         padding: 5px;
     }
 
+    .team-content {
+        position: absolute;
+    }
+
     div.gallery {
-        margin: 5px;
         float: left;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         position: relative;
     }
 
@@ -36,15 +38,15 @@
     }
 
 
-    #slider4 {
+    /*   #slider4 {
 
-        background: url("{%static '/images/team2.jpg'%}");
+       /* background: url("{%static '/images/team2.jpg'%}");
         background-repeat: no-repeat;
         display: block;
-        background-size: 100% 100vh;
+        background-size: 100% 100vh;*/
     }
 
-    .text {
+    */ .text {
         color: white;
         font-size: 20px;
         position: absolute;
@@ -101,39 +103,113 @@
                 <div>
                     <img src="{%static '/images/Landing_Page_SLider1.gif'%}" class="slide1" alt="">
                 </div>
+
                 <div class="content text-white">
-                    <h1 style="font-size: 5vw;"></h1>
-                    <p style="width: 40vw; font-size:25px;">Core Metric offers a pre-built industry specific A.I
-                        applications to reduce the pain points in the enterprise eco-system.
-                        Core Metric’s ability to deep/Machine learn large amounts of data is helping us tackle one of
-                        the most difficult unsolved Problems across verticals.
-                    </p>
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <p style=" font-size:1em;letter-spacing:2px; ">Core Metric offers a pre-built industry
+                                specific A.I
+                                applications to reduce the pain points in the enterprise eco-system.
+                                Core Metric’s ability to deep/Machine learn large amounts of data is helping us tackle
+                                one of
+                                the most difficult unsolved Problems across verticals.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" id="slider2">
                 <img src="{%static '/images/Landing_Page_SLider2.gif'%}" class="slide2" alt="">
                 <div class="content text-white">
-                    <h1 style="font-size: 3vw;">Zeropaper.ai</h1>
-                    <p style="width: 40vw;font-size:25px;">Extracting document data with A.I which emulate human
-                        intelligence with human in loop with 85% + Accuracy and at an affordable cost</p>
-                    <button class="btn btn-outline-warning" style="font-size: 20px;"><a href="http://zeropaper.ai/"
-                            target="_blank">Portal</a> </button>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 style="font-size: 3rem;">Zeropaper.ai</h1>
+                            <p style=" font-size:1em;letter-spacing:2px;">Extracting document data with A.I which
+                                emulate human
+                                intelligence with human in loop with 85% + Accuracy and at an affordable cost</p>
+                            <button class="btn btn-outline-warning" style="font-size: 20px;"><a
+                                    href="http://zeropaper.ai/" target="_blank">Portal</a> </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" id="slider3">
                 <img src="{%static '/images/Landing_Page_SLider3.gif'%}" class="slide3" alt="">
 
                 <div class="content text-white">
-                    <h1 style="font-size: 3vw;">Mission</h1>
-                    <p style="width: 40vw; font-size:25px;">Core Metric mission is to build an eco-system of pre-built
-                        industry specific A.I applications at affordable cost to industries across the verticals</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 style="font-size:3rem;">Mission</h1>
+                            <p style=" font-size:1em;letter-spacing:2px;">Core Metric mission is to build an eco-system
+                                of pre-built
+                                industry specific A.I applications at affordable cost to industries across the verticals
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="swiper-slide " id="slider4">
                 <br><br>
-                <h3 style="color:rgba(255,255,255,0.7);font-size:5vw;">Teams</h3>
+                <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="">
+                <div class="team-content text-white">
+                    <div>
+                        <h3 style="color:rgba(255,255,255,0.7);font-size:3rem;">Teams</h3>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="gallery p-2 ">
+                            <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>Pradeep Sreeram</h4>
+                                    <p style="font-size:12px">Co-Founder</p>
+                                    <a href="https://www.linkedin.com/in/pradeepsvln/" target="_blank"><i
+                                            class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="gallery p-2 ">
+                            <img src="{%static '/images/venugopalsir.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>Venu Gopal Vemula</h4>
+                                    <p style="font-size:12px">COO</p>
+                                    <a href="https://www.linkedin.com/in/venugopal-vemula-93308341/" target="_blank"><i
+                                            class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery p-2 ">
+                            <img src="{%static '/images/deepanshusir.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>Deepanshu Bhinda</h4>
+                                    <p style="font-size:12px">CTO</p>
+                                    <a href="https://www.linkedin.com/in/deepanshubhinda/" target="_blank"><i
+                                            class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="gallery p-2">
+                            <img src="{%static '/images/partner.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>F.A Khan</h4>
+                                    <p style="font-size:12px">R & D Lead</p>
+                                     <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> 
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
+                <!-- 
                 <div class="row justify-content-center">
                     <div class="gallery p-2 ">
                         <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
@@ -178,12 +254,12 @@
                             <div class="text">
                                 <h2>F.A Khan</h2>
                                 <p style="font-size:15px">R & D Lead</p>
-                                <!-- <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> -->
+                                // <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> 
 
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="swiper-slide" id="slider5">
                 <div class="contactus">
@@ -191,25 +267,25 @@
 
                     <div class="row text-white ">
                         <div class="col-md-6">
-                            <div class="card" style="width: auto;">
+                            <div class="card" style="width: ;">
                                 <div class="card-body">
                                     <h5 class="card-title">Contact Us</h5>
                                     <form>
                                         <div class="form-group row text-left">
-                                            <label for="inputEmail3" class="col-md-2 col-form-label">Email</label>
+                                            <label for="inputEmail3" class="col-md-2 col-form-label" style="font-size: 15px;">Email</label>
                                             <div class="col-md-10">
                                                 <input type="email" class="form-control" id="inputEmail3">
                                             </div>
                                         </div>
                                         <div class="form-group row text-left">
-                                            <label for="inputPassword3" class="col-md-2 col-form-label">Password</label>
+                                            <label for="inputPassword3" class="col-md-2 col-form-label" style="font-size: 15px;">Password</label>
                                             <div class="col-md-10">
                                                 <input type="password" class="form-control" id="inputPassword3">
                                             </div>
                                         </div>
 
                                         <div class="form-group row text-left">
-                                            <div class="col-md-2">Comment</div>
+                                            <div class="col-md-2" style="font-size: 15px;">Comment</div>
                                             <div class="col-md-10">
                                                 <textarea class="form-control" id="exampleFormControlTextarea1"
                                                     rows="3"></textarea>
@@ -228,17 +304,17 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h3>Indore Office:</h3><br>
-                                    <p class="text-left">615, Apollo Premier, Vijay Nagar Sqaure, Indore, Madhya
+                                    <h4>Indore Office:</h4>
+                                    <p style="font-size: 12px;">615, Apollo Premier, Vijay Nagar Sqaure, Indore, Madhya
                                         pradesh, India, 452001</p>
-                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" target="_blank"><i
+                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;" target="_blank"><i
                                             class="fa fa-map-marker-alt fa-lg"></i> Get directions</a>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3>Hyderabad-Address</h3><br>
-                                    <p class="text-left">2nd Floor, Adviti NIvas PLOT - 26, near RTO Office, Chandragiri
+                                    <h4>Hyderabad-Address</h4>
+                                    <p style="font-size:12px;">2nd Floor, Adviti NIvas PLOT - 26, near RTO Office, Chandragiri
                                         Colony, Trimulgherry, Secunderabad, Telangana 500015</p>
-                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" target="_blank"><i
+                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;"W target="_blank"><i
                                             class="fas fa-map-marker-alt fa-lg"></i> Get directions</a>
                                 </div>
                             </div>
