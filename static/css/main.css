@@ -1,0 +1,399 @@
+/* ! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+ /* .section {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 120%;
+    font-weight: 800;
+    position: relative;
+  }
+  
+  #section0 {
+    height: 60vh;
+    background: #00b9ae;
+  }
+  
+  #section1 {
+    height: 100vh;
+    background: #6699cc;
+  }
+  
+  #section2 {
+    height: 150vh;
+    background: #ff8c42;
+  }
+  
+  #section3 {
+    height: 60vh;
+    background: #ff3c38;
+  }
+  
+  #section4 {
+    height: 100vh;
+    background: #a23e48;
+  }
+  
+  
+  /* ==========================================================================
+     Media Queries
+     ========================================================================== */
+  
+  /* @media only screen and (min-width: 35em) {
+  }
+  
+  @media print,
+    (-o-min-device-pixel-ratio: 5/4),
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 120dpi) {
+  } */
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+/*  .hidden {
+    display: none !important;
+    visibility: hidden;
+  }
+  
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  .clearfix {
+    *zoom: 1;
+  }
+  
+  /* ==========================================================================
+     Print styles
+     ========================================================================== */
+  
+ /* @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+  
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    img {
+      max-width: 100% !important;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+   */
+   html, body {
+    width:100%;
+    height: 100%;
+  }
+  
+  header {
+    background-color: red;
+    
+    
+  }
+  
+  /**
+   * fullPage 1.4.5
+   * https://github.com/alvarotrigo/fullPage.js
+   * MIT licensed
+   *
+   * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+   */
+  body, html {
+      margin:0;
+      padding:0;
+  }
+  #superContainer {
+      height:100%;
+      position:relative;
+  }
+  .section{
+      position: relative;
+    -webkit-box-sizing: border-box; 
+      -moz-box-sizing: border-box; 
+           box-sizing: border-box; 
+  }
+  .custom-full1 {
+    background: grey;
+  }
+  .slide {
+      float: left;
+  }
+  .slide, .slidesContainer {
+      height: 100%;
+      display: block;
+  }
+  .slides {
+    height: 100%;
+      overflow: hidden;
+      position: relative;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+  }
+  .section.table,
+  .slide.table{
+    display:table;
+    width:100%;
+  }
+  .tableCell{
+    display:table-cell;
+    vertical-align: middle;
+    width:100%;
+    height: 100%;
+  }
+  .slidesContainer {
+      float: left;
+      position: relative;
+  }
+  .controlArrow{
+      position:absolute;
+      top:50%;
+      cursor:pointer;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    margin-top: -38px;
+  }
+  
+  .controlArrow.prev{
+    left:15px;
+    width: 0px;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+  .controlArrow.next{  
+    right:15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+  }
+  .scrollable{
+    overflow:scroll;
+  }
+  .easing{
+      -webkit-transition: all 0.7s ease-out;
+      -moz-transition: all 0.7s ease-out;
+      -o-transition: all 0.7s ease-out;
+      transition: all 0.7s ease-out;
+  }
+  #fullPage-nav{
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+  }
+  #fullPage-nav.right{
+    right: 17px;
+  }
+  #fullPage-nav.left{
+    left: 17px;
+  }
+  .fullPage-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+  }
+  .fullPage-slidesNav.bottom{
+    bottom: 17px;
+  }
+  .fullPage-slidesNav.top{
+    top: 17px;
+  }
+  #fullPage-nav ul,
+  .fullPage-slidesNav ul{
+    margin:0;
+    padding:0;
+  }
+  #fullPage-nav li,
+  .fullPage-slidesNav li{
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+  }
+  .fullPage-slidesNav li{
+    display: inline-block;
+  }
+  #fullPage-nav li a,
+  .fullPage-slidesNav li a{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #fullPage-nav li .active span,
+  .fullPage-slidesNav .active span{
+    background: #333;
+  }
+  #fullPage-nav span,
+  .fullPage-slidesNav span{
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+  }
+  .fullPage-tooltip{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    top: -2px;
+  }
+  .fullPage-tooltip.right{
+    right: 20px;
+  }
+  .fullPage-tooltip.left{
+    left: 20px;
+  }
+  
