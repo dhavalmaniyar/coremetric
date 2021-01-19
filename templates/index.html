@@ -66,11 +66,11 @@
     }
 
     .group2 {
-        margin-left: 400px !important;
+        margin-left: 350px !important;
     }
 
     .group1 {
-        margin-right: 400px !important;
+        margin-right: 350px !important;
     }
 
     #slider5 {
@@ -88,8 +88,13 @@
 
     }
 
-    @media screen and (max-width: 950px) {
-        .remove {
+    @media screen and (min-width: 900px) {
+        .desktop {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .moblie {
             display: none;
         }
     }
@@ -120,7 +125,7 @@
                 </div>
             </div>
             <div class="swiper-slide" id="slider2">
-                <img src="{%static '/images/Landing_Page_SLider2.gif'%}" class="slide2" alt="">
+                <img src="{%static '/images/Landing_Page_SLider2-min.gif'%}" class="slide2" alt="">
                 <div class="content text-white">
                     <div class="row">
                         <div class="col-md-6">
@@ -128,8 +133,8 @@
                             <p style=" font-size:1em;letter-spacing:2px;">Extracting document data with A.I which
                                 emulate human
                                 intelligence with human in loop with 85% + Accuracy and at an affordable cost</p>
-                            <button class="btn btn-outline-warning" style="font-size: 20px;"><a
-                                    href="http://zeropaper.ai/" target="_blank">Portal</a> </button>
+                            <button class="btn btn-outline-warning" style="font-size: 20px; "><a
+                                    href="http://zeropaper.ai/" style="color:white;" target="_blank">Portal</a> </button>
                         </div>
                     </div>
                 </div>
@@ -150,7 +155,7 @@
 
                 </div>
             </div>
-            <div class="swiper-slide " id="slider4">
+            <div class="swiper-slide desktop" id="slider4">
                 <br><br>
                 <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="">
                 <div class="team-content text-white">
@@ -201,8 +206,8 @@
                                 <div class="text">
                                     <h4>F.A Khan</h4>
                                     <p style="font-size:12px">R & D Lead</p>
-                                     <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> 
-    
+                                    <!-- <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> -->
+
                                 </div>
                             </div>
                         </div>
@@ -261,6 +266,118 @@
                     </div>
                 </div> -->
             </div>
+            <div class="swiper-slide moblie " id="slider4">
+                <br><br>
+                <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="">
+                <div class="team-content text-white">
+                    <div>
+                        <h3 style="color:rgba(255,255,255,0.7);font-size:3rem;">Teams</h3>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="gallery p-2 ">
+                            <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>Pradeep Sreeram</h4>
+                                    <p style="font-size:12px">Co-Founder</p>
+                                    <a href="https://www.linkedin.com/in/pradeepsvln/" target="_blank"><i
+                                            class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="gallery p-2 group1">
+                            <img src="{%static '/images/venugopalsir.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>Venu Gopal Vemula</h4>
+                                    <p style="font-size:12px">COO</p>
+                                    <a href="https://www.linkedin.com/in/venugopal-vemula-93308341/" target="_blank"><i
+                                            class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery p-2 group2">
+                            <img src="{%static '/images/deepanshusir.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>Deepanshu Bhinda</h4>
+                                    <p style="font-size:12px">CTO</p>
+                                    <a href="https://www.linkedin.com/in/deepanshubhinda/" target="_blank"><i
+                                            class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="gallery p-2">
+                            <img src="{%static '/images/partner.jpg'%}" alt="Cinque Terre" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4>F.A Khan</h4>
+                                    <p style="font-size:12px">R & D Lead</p>
+                                    <!-- <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
+                <div class="row justify-content-center">
+                    <div class="gallery p-2 ">
+                        <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Pradeep Sreeram</h2>
+                                <p style="font-size:15px">Co-Founder</p>
+                                <a href="https://www.linkedin.com/in/pradeepsvln/" target="_blank"><i
+                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="gallery p-2 group1">
+                        <img src="{%static '/images/venugopalsir.jpg'%}" alt="Cinque Terre" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Venu Gopal Vemula</h2>
+                                <p style="font-size:15px">COO</p>
+                                <a href="https://www.linkedin.com/in/venugopal-vemula-93308341/" target="_blank"><i
+                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery p-2 group2">
+                        <img src="{%static '/images/deepanshusir.jpg'%}" alt="Cinque Terre" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Deepanshu Bhinda</h2>
+                                <p style="font-size:15px">CTO</p>
+                                <a href="https://www.linkedin.com/in/deepanshubhinda/" target="_blank"><i
+                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="gallery p-2">
+                        <img src="{%static '/images/partner.jpg'%}" alt="Cinque Terre" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>F.A Khan</h2>
+                                <p style="font-size:15px">R & D Lead</p>
+                                // <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> 
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
             <div class="swiper-slide" id="slider5">
                 <div class="contactus">
 
@@ -272,13 +389,15 @@
                                     <h5 class="card-title">Contact Us</h5>
                                     <form>
                                         <div class="form-group row text-left">
-                                            <label for="inputEmail3" class="col-md-2 col-form-label" style="font-size: 15px;">Email</label>
+                                            <label for="inputEmail3" class="col-md-2 col-form-label"
+                                                style="font-size: 15px;">Email</label>
                                             <div class="col-md-10">
                                                 <input type="email" class="form-control" id="inputEmail3">
                                             </div>
                                         </div>
                                         <div class="form-group row text-left">
-                                            <label for="inputPassword3" class="col-md-2 col-form-label" style="font-size: 15px;">Password</label>
+                                            <label for="inputPassword3" class="col-md-2 col-form-label"
+                                                style="font-size: 15px;">Password</label>
                                             <div class="col-md-10">
                                                 <input type="password" class="form-control" id="inputPassword3">
                                             </div>
@@ -307,15 +426,16 @@
                                     <h4>Indore Office:</h4>
                                     <p style="font-size: 12px;">615, Apollo Premier, Vijay Nagar Sqaure, Indore, Madhya
                                         pradesh, India, 452001</p>
-                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;" target="_blank"><i
-                                            class="fa fa-map-marker-alt fa-lg"></i> Get directions</a>
+                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;"
+                                        target="_blank"><i class="fa fa-map-marker-alt fa-lg"></i> Get directions</a>
                                 </div>
                                 <div class="col-md-6">
                                     <h4>Hyderabad-Address</h4>
-                                    <p style="font-size:12px;">2nd Floor, Adviti NIvas PLOT - 26, near RTO Office, Chandragiri
+                                    <p style="font-size:12px;">2nd Floor, Adviti NIvas PLOT - 26, near RTO Office,
+                                        Chandragiri
                                         Colony, Trimulgherry, Secunderabad, Telangana 500015</p>
-                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;"W target="_blank"><i
-                                            class="fas fa-map-marker-alt fa-lg"></i> Get directions</a>
+                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;" W
+                                        target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i> Get directions</a>
                                 </div>
                             </div>
                             <hr>
