@@ -43,10 +43,10 @@
        /* background: url("{%static '/images/team2.jpg'%}");
         background-repeat: no-repeat;
         display: block;
-        background-size: 100% 100vh;*/
-    }
+        background-size: 100% 100vh;
+    }*/
 
-    */ .text {
+    .text {
         color: white;
         font-size: 20px;
         position: absolute;
@@ -59,10 +59,39 @@
         font-weight: 600;
     }
 
+    #slider3 {
+        background-color: rgb(8, 8, 63);
+    }
+
     .image {
         display: block;
         width: 100%;
         height: 100%;
+    }
+
+    /*  .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color:white;
+    }
+    .video-container video {
+        min-width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+
+    }*/
+
+    .video-container video {
+        height: 100vh;
+        width: 100vw;
     }
 
     .group2 {
@@ -88,15 +117,21 @@
 
     }
 
+
     @media screen and (min-width: 900px) {
         .desktop {
             display: none;
         }
     }
+
     @media screen and (max-width: 900px) {
         .moblie {
             display: none;
         }
+    }
+
+    video {
+        object-fit: fill
     }
 </style>
 
@@ -105,8 +140,18 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" id="slider1">
-                <div>
-                    <img src="{%static '/images/Landing_Page_SLider1.gif'%}" class="slide1" alt="">
+                <!-- <div> -->
+                <!-- <img src="{%static '/images/Landing_Page_SLider1.webm'%}" class="slide1" alt=""> -->
+                <!-- <video src="{%static '/images/Landing_Page_Slider1.webm'%} "></video> -->
+                <!-- <video autoplay muted loop >
+                        <source id="video1" src="{%static '/images/Landing_Page_Slider1.webm'%}" type="video/mp4">
+                    </video>
+                </div> -->
+                <div class="video-container">
+                    <video autoplay muted loop class="videoBg">
+                        <source src="{%static '/images/Landing_Page_Slider1.webm'%}" type="video/mp4">
+                    </video>
+
                 </div>
 
                 <div class="content text-white">
@@ -125,7 +170,13 @@
                 </div>
             </div>
             <div class="swiper-slide" id="slider2">
-                <img src="{%static '/images/Landing_Page_SLider2-min.gif'%}" class="slide2" alt="">
+                <!-- <img src="{%static '/images/Landing_Page_SLider2-min.webm'%}" class="slide2" alt=""> -->
+                <div class="video-container">
+                    <video autoplay muted loop width="100%">
+                        <source src="{%static '/images/Landing_Page_Slider2-min.webm'%}" type="video/mp4">
+                    </video>
+
+                </div>
                 <div class="content text-white">
                     <div class="row">
                         <div class="col-md-6">
@@ -134,14 +185,19 @@
                                 emulate human
                                 intelligence with human in loop with 85% + Accuracy and at an affordable cost</p>
                             <button class="btn btn-outline-warning" style="font-size: 20px; "><a
-                                    href="http://zeropaper.ai/" style="color:white;" target="_blank">Portal</a> </button>
+                                    href="http://zeropaper.ai/" style="color:white;" target="_blank">Portal</a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide" id="slider3">
-                <img src="{%static '/images/Landing_Page_SLider3.gif'%}" class="slide3" alt="">
+                <div class="video-container">
+                    <video autoplay muted loop width="100%">
+                        <source src="{%static '/images/Landing_Page_Slider3.webm'%}" type="video/mp4">
+                    </video>
 
+                </div>
                 <div class="content text-white">
                     <div class="row">
                         <div class="col-md-6">
@@ -156,11 +212,11 @@
                 </div>
             </div>
             <div class="swiper-slide desktop" id="slider4">
-                <br><br>
+               <br><br>
                 <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="">
                 <div class="team-content text-white">
                     <div>
-                        <h3 style="color:rgba(255,255,255,0.7);font-size:3rem;">Teams</h3>
+                        <h3 style="color:rgba(255,255,255,0.7);font-size:3rem;">Team</h3>
                     </div>
                     <div class="row justify-content-center">
                         <div class="gallery p-2 ">
@@ -384,7 +440,7 @@
 
                     <div class="row text-white ">
                         <div class="col-md-6">
-                            <div class="card" style="width: ;">
+                            <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Contact Us</h5>
                                     <form>
