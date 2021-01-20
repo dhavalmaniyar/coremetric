@@ -114,15 +114,8 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide noswipe" id="slider1">
-                <!-- <div> -->
-                <!-- <img src="{%static '/images/Landing_Page_SLider1.webm'%}" class="slide1" alt=""> -->
-                <!-- <video src="{%static '/images/Landing_Page_Slider1.webm'%} "></video> -->
-                <!-- <video autoplay muted loop >
-                        <source id="video1" src="{%static '/images/Landing_Page_Slider1.webm'%}" type="video/mp4">
-                    </video>
-                </div> -->
                 <div class="video-container">
-                    <video autoplay muted loop class="videoBg">
+                    <video autoplay muted loop class="videoBg" poster="{%static '/images/slider1.webm'%}">
                         <source src="{%static '/images/slider1.webm'%}" type="video/webm">
                     </video>
 
@@ -146,7 +139,7 @@
             <div class="swiper-slide noswipe" id="slider2">
                 <!-- <img src="{%static '/images/Landing_Page_SLider2-min.webm'%}" class="slide2" alt=""> -->
                 <div class="video-container">
-                    <video autoplay muted loop width="100%">
+                    <video autoplay muted loop width="100%" poster="{%static '/images/slide2.webm'%}">
                         <source src="{%static '/images/slide2.webm'%}" type="video/webm">
                     </video>
 
@@ -167,7 +160,7 @@
             </div>
             <div class="swiper-slide noswipe" id="slider3">
                 <div class="video-container">
-                    <video autoplay muted loop width="100%">
+                    <video autoplay muted loop width="100%" poster="{%static '/images/slide2.webm'%}">
                         <source src="{%static '/images/slide3.webm'%}" type="video/webm">
                     </video>
 
@@ -243,58 +236,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- 
-                <div class="row justify-content-center">
-                    <div class="gallery p-2 ">
-                        <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Pradeep Sreeram</h2>
-                                <p style="font-size:15px">Co-Founder</p>
-                                <a href="https://www.linkedin.com/in/pradeepsvln/" target="_blank"><i
-                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="gallery p-2 group1">
-                        <img src="{%static '/images/venugopalsir.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Venu Gopal Vemula</h2>
-                                <p style="font-size:15px">COO</p>
-                                <a href="https://www.linkedin.com/in/venugopal-vemula-93308341/" target="_blank"><i
-                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery p-2 group2">
-                        <img src="{%static '/images/deepanshusir.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Deepanshu Bhinda</h2>
-                                <p style="font-size:15px">CTO</p>
-                                <a href="https://www.linkedin.com/in/deepanshubhinda/" target="_blank"><i
-                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="gallery p-2">
-                        <img src="{%static '/images/partner.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>F.A Khan</h2>
-                                <p style="font-size:15px">R & D Lead</p>
-                                // <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> 
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <div class="swiper-slide moblie noswipe" id="slider4">
                 <br><br>
@@ -355,57 +296,6 @@
                     </div>
                 </div>
 
-                <!-- 
-                <div class="row justify-content-center">
-                    <div class="gallery p-2 ">
-                        <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Pradeep Sreeram</h2>
-                                <p style="font-size:15px">Co-Founder</p>
-                                <a href="https://www.linkedin.com/in/pradeepsvln/" target="_blank"><i
-                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="gallery p-2 group1">
-                        <img src="{%static '/images/venugopalsir.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Venu Gopal Vemula</h2>
-                                <p style="font-size:15px">COO</p>
-                                <a href="https://www.linkedin.com/in/venugopal-vemula-93308341/" target="_blank"><i
-                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery p-2 group2">
-                        <img src="{%static '/images/deepanshusir.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>Deepanshu Bhinda</h2>
-                                <p style="font-size:15px">CTO</p>
-                                <a href="https://www.linkedin.com/in/deepanshubhinda/" target="_blank"><i
-                                        class="fab fa-linkedin fa-2x" style="color: white;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="gallery p-2">
-                        <img src="{%static '/images/partner.jpg'%}" alt="Cinque Terre" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h2>F.A Khan</h2>
-                                <p style="font-size:15px">R & D Lead</p>
-                                // <a href=""><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a> 
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
 
             <div class="swiper-slide noswipe" id="slider5">
