@@ -36,6 +36,7 @@
     .gallery:hover .overlay {
         opacity: 0.8;
     }
+
     .text {
         color: white;
         font-size: 20px;
@@ -58,6 +59,7 @@
         width: 100%;
         height: 100%;
     }
+
     .video-container video {
         height: 100vh;
         width: 100vw;
@@ -124,7 +126,7 @@
                 <div class="video-container">
                     <video autoplay muted loop class="videoBg">
                         <source src="{%static '/images/slider1.webm'%}" type="video/webm">
-                            <source src="{%static '/images/slider1.mp4'%}" type="video/mp4">
+                        <source src="{%static '/images/slider1.mp4'%}" type="video/mp4">
                     </video>
 
                 </div>
@@ -147,7 +149,7 @@
             <div class="swiper-slide noswipe" id="slider2">
                 <!-- <img src="{%static '/images/Landing_Page_SLider2-min.webm'%}" class="slide2" alt=""> -->
                 <div class="video-container">
-                    <video autoplay muted loop width="100%">
+                    <video autoplay muted loop width="100%" playsinline>
                         <source src="{%static '/images/slide2.webm'%}" type="video/webm">
                         <source src="{%static '/images/slide2.mp4'%}" type="video/mp4">
                     </video>
@@ -171,7 +173,7 @@
                 <div class="video-container">
                     <video autoplay muted loop width="100%">
                         <!-- <source src="{%static '/images/slide3.webm'%}" type="video/webm"> -->
-                            <source src="{%static '/images/slide3.mp4'%}" type="video/mp4">
+                        <source src="{%static '/images/slide3.mp4'%}" type="video/mp4">
                     </video>
 
                 </div>
@@ -245,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
             <div class="swiper-slide moblie noswipe" id="slider4">
                 <br><br>
@@ -311,7 +313,7 @@
             <div class="swiper-slide noswipe" id="slider5">
                 <div class="contactus">
 
-
+                    
                     <div class="row text-white ">
                         <div class="col-md-6">
                             <div class="card">
@@ -351,6 +353,12 @@
                             </div>
                         </div>
                         <div class="col-md-6">
+                            <div class=" text-white " >
+                                    <h4>Headquarters</h4>
+                                    <p style="font-size:12px;">San Diego California</p>
+                                    <a href="https://goo.gl/maps/1auFQ8oB2YLEAvns8" style="font-size:12px;" 
+                                        target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i> Get directions</a>
+                            </div><br>
                             <div class="row">
                                 <div class="col-md-6">
                                     <h4>Indore Office:</h4>
@@ -364,11 +372,11 @@
                                     <p style="font-size:12px;">2nd Floor, Adviti Nivas PLOT - 26, near RTO Office,
                                         Chandragiri
                                         Colony, Trimulgherry, Secunderabad, Telangana 500015</p>
-                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;" W
+                                    <a href="https://goo.gl/maps/M2gCncbT3Va9Z2226" style="font-size:12px;" 
                                         target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i> Get directions</a>
                                 </div>
                             </div>
-                            <hr>
+                           
 
                         </div>
                     </div>
@@ -389,7 +397,7 @@
             spaceBetween: 0,
             effect: 'slide',
             speed: 800,
-            
+
             keyboard: {
                 enabled: true,
             },
@@ -401,37 +409,37 @@
 
         });
 
-        $(".navbar-brand").click(function(){
+        $(".navbar-brand").click(function () {
             setTimeout(function () {
                 swiper.slideTo(0);
             }, 175);
         })
 
-        $(".nav-item-home").click(function(){
+        $(".nav-item-home").click(function () {
             setTimeout(function () {
                 swiper.slideTo(0);
             }, 175);
         })
 
-        $(".nav-item-projects").click(function(){
+        $(".nav-item-projects").click(function () {
             setTimeout(function () {
                 swiper.slideTo(1);
             }, 175);
         })
 
-        $(".nav-item-our-mission").click(function(){
+        $(".nav-item-our-mission").click(function () {
             setTimeout(function () {
                 swiper.slideTo(2);
             }, 175);
         })
 
-        $(".nav-item-teams").click(function(){
+        $(".nav-item-teams").click(function () {
             setTimeout(function () {
                 swiper.slideTo(3);
             }, 175);
         })
 
-        $(".nav-item-contact").click(function(){
+        $(".nav-item-contact").click(function () {
             setTimeout(function () {
                 swiper.slideTo(4);
             }, 175);
