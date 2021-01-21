@@ -9,5 +9,5 @@ class Comment(models.Model):
     commentedOn= models.DateField(default=timezone.now())
 
     def __str__(self):
-        return self.name + " ("+str(self.commentedOn)+") "
+        return self.name + " ("+str(self.commentedOn)+") " 
     
