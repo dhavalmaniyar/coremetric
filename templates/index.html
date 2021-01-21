@@ -111,6 +111,12 @@
 </style>
 
 <body>
+    {% if message %}
+    <script>
+        window.alert("{{message}}");
+    </script>
+         
+{% endif %}
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
