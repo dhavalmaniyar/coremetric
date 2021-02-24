@@ -108,6 +108,11 @@
     a label {
         cursor: pointer;
     }
+    .hide{
+        position:absolute;
+        z-index: -1;
+        
+    }
 </style>
 
 <body>
@@ -120,6 +125,7 @@
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
+            
             <div class="swiper-slide noswipe" id="slider1">
                 <!-- <div> -->
                 <!-- <img src="{%static '/images/Landing_Page_SLider1.webm'%}" class="slide1" alt=""> -->
@@ -129,9 +135,21 @@
                     </video>
                 </div> -->
                 <div class="video-container">
+                    <h1 class="hide">
+                        Core Metric offers a pre-built industry
+                                specific A.I
+                                applications to reduce the pain points in the enterprise eco-system.
+                                Core Metric’s ability to deep/Machine learn large amounts of data is helping us tackle
+                                one of
+                                the most difficult unsolved Problems across verticals.
+                    </h1>
+                    <p class="hide"><b>Core Metric mission is to build an eco-system
+                        of pre-built
+                        industry specific A.I applications at affordable cost to industries across the verticals</b></p>
                     <video autoplay muted loop class="videoBg">
                         <source src="{%static '/images/slider1.webm'%}" type="video/webm">
                         <source src="{%static '/images/slider1.mp4'%}" type="video/mp4">
+                        coremetric landing page 1
                     </video>
 
                 </div>
@@ -157,6 +175,7 @@
                     <video autoplay muted loop width="100%" playsinline>
                         <source src="{%static '/images/slide2.webm'%}" type="video/webm">
                         <source src="{%static '/images/slide2.mp4'%}" type="video/mp4">
+                        coremetric landing page 2
                     </video>
 
                 </div>
@@ -179,6 +198,7 @@
                     <video autoplay muted loop width="100%">
                         <!-- <source src="{%static '/images/slide3.webm'%}" type="video/webm"> -->
                         <source src="{%static '/images/slide3.mp4'%}" type="video/mp4">
+                        coremetric landing page 3
                     </video>
 
                 </div>
@@ -197,14 +217,14 @@
             </div>
             <div class="swiper-slide desktop noswipe" id="slider4">
                 <br><br>
-                <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="">
+                <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="coremetric_background">
                 <div class="team-content text-white">
                     <div>
                         <h3 style="color:rgba(255,255,255,0.7);font-size:3rem;">Team</h3>
                     </div>
                     <div class="row justify-content-center">
                         <div class="gallery p-2 ">
-                            <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/pradeepsir.jpg'%}" alt="Coremetric_pradeep" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>Pradeep Sreeram</h4>
@@ -217,7 +237,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="gallery p-2 ">
-                            <img src="{%static '/images/venusir.jpg'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/venusir.jpg'%}" alt="Coremetric_venugopal" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>Venu Gopal Vemula</h4>
@@ -228,7 +248,7 @@
                             </div>
                         </div>
                         <div class="gallery p-2 ">
-                            <img src="{%static '/images/deepanshusir.JPG'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/deepanshusir.JPG'%}" alt="coremetric_deepanshu_binda" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>Deepanshu Bhinda</h4>
@@ -241,7 +261,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="gallery p-2">
-                            <img src="{%static '/images/partner.jpg'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/partner.jpg'%}" alt="coremetric_faKhan" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>F.A Khan</h4>
@@ -256,14 +276,14 @@
             </div>
             <div class="swiper-slide moblie noswipe" id="slider4">
                 <br><br>
-                <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="">
+                <img src="{%static '/images/team2.jpg'%}" style="width: 100%; height:100vh;" alt="coremetric.ai">
                 <div class="team-content text-white">
                     <div>
                         <h3 style="color:rgba(255,255,255,0.7);font-size:3rem;">Team</h3>
                     </div>
                     <div class="row justify-content-center">
                         <div class="gallery p-2 ">
-                            <img src="{%static '/images/pradeepsir.jpg'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/pradeepsir.jpg'%}" alt="coremetric_pradeep" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>Pradeep Sreeram</h4>
@@ -276,7 +296,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="gallery p-2 group1">
-                            <img src="{%static '/images/venusir.jpg'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/venusir.jpg'%}" alt="coremetric_venugopal" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>Venu Gopal Vemula</h4>
@@ -287,7 +307,7 @@
                             </div>
                         </div>
                         <div class="gallery p-2 group2">
-                            <img src="{%static '/images/deepanshusir.jpg'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/deepanshusir.jpg'%}" alt="coremetric_deepanshu_binda" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>Deepanshu Bhinda</h4>
@@ -300,7 +320,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="gallery p-2">
-                            <img src="{%static '/images/partner.jpg'%}" alt="Cinque Terre" class="image">
+                            <img src="{%static '/images/partner.jpg'%}" alt="coremetric_fa_khan" class="image">
                             <div class="overlay">
                                 <div class="text">
                                     <h4>F.A Khan</h4>
